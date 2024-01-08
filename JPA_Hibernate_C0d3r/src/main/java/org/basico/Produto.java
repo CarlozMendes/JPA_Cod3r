@@ -8,9 +8,9 @@ public class Produto {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-@Column(name = "prod_nome",length = 200)
+@Column(name = "prod_nome",length = 200,nullable = false)
     private String nome;
-
+@Column(name = "preco", nullable = false,precision = 11,scale = 2)
     private Double preco;
 
     public Produto() {
