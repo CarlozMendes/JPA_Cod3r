@@ -6,6 +6,7 @@
     <persistence-unit name="exercicios-jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>org.basico.Usuario</class>
+        <class>org.basico.Produto</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
