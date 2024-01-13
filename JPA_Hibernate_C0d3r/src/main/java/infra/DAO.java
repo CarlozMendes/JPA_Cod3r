@@ -42,6 +42,9 @@ public class DAO<E> {
         return this.abrirT().incluirT(entidade).fecharT();
     }
 
+    public E obterPorID(Object id){
+        return em.find(classe,id);
+    }
     public List<E> obterAtomico(){
         return this.obterAtomico(10,0);
     }
